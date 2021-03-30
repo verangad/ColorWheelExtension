@@ -1,0 +1,16 @@
+body{
+    background-color: #292825;
+}
+
+
+.rectangle {
+    height: 20px;
+    width: 40px;
+    
+   
+}
+
+.rectangle.shadeRect{
+    background-color: red;
+
+}
