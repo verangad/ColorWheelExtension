@@ -1,3 +1,8 @@
+html{
+    width: 400px;
+    
+}
+
 body{
 
     background-color: #424a52;
@@ -5,6 +10,7 @@ body{
     background-attachment: fixed;
     background-size: cover;
     margin: 0;
+    width: 400px;
 }
 
 header{
@@ -23,13 +29,27 @@ header{
 
 .menutab{
   list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   
 
 
 }
 
-.menutab li{
-    display: inline-block;
+.color-themes{
+    list-style: none;
+    display: flex;
+}
+
+
+
+.menubutton{
+    background-color: darkslategray;
+    cursor: pointer;
+    outline: none;
+    border: none;
+
 }
 
 
@@ -39,6 +59,7 @@ header{
     height: 20px;
     width: 40px;
     
+    
    
 }
 
@@ -46,3 +67,41 @@ header{
     background-color: red;
 
 }
+
+.shade-slide{
+    position: relative;
+    left: 80%;
+
+}
+
+.rectangle.monochrome{
+    background-color: white;
+
+}
+
+.rectangle.complement{
+    background-color: white;
+
+}
+
+.rectangle.analog{
+    background-color: white;
+
+}
+
+.rectangle.split-comp{
+    background-color: white;
+
+}
+
+.rectangle.triad{
+    background-color: white;
+
+}
+
+.rectangle.tetra{
+    background-color: white;
+
+}
+
+

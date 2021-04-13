@@ -1,10 +1,11 @@
+
 var newColor = document.getElementById("manualPicker").value;
 
 function colorPick(){
 
     var colorElement = document.getElementById("manualPicker").value;
 
-    window.alert(colorElement);
+    shadePicker("0x112456");
 
 
    
