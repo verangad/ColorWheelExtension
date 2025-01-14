@@ -1,113 +1,90 @@
 <!DOCTYPE html>
 
 <html>
-
     <link href="styles.css" rel="stylesheet">
     <head>
-
-
     </head>
-
     <body>
-
         <header>
-            <nav>
-                <ul class="menutab">
-                    <li>
-                        <button class="menubutton">Color Picker</button>
-                    </li>
-                    <li>
-                        <button class="menubutton">Pose Generator</button>
-                    </li>               
-                </ul>
-            </nav>
-
+            <div class="menu-tab">
+                <div class="horizontal-container">
+                    <button class="menu-button">Color Picker</button>
+                </div>
+            </div>
         </header>
 
-        <!--
-        <div class="shade-slide">
-            <canvas id="shadePicker" width="50" height="300" style="border:1px solid #d3d3d3"></canvas>
-        </div>
-        -->
+        <div class="theory-box">
+            <div class="horizontal-container">
+                <input type="color" id="manualPicker" name="manualPicker" value="#FFFFFF">
+                <button id="eyedropper"></button>
+            </div>
 
-        <div>
-            
-            <input type="color" id="manualPicker" name="manualPicker" value="#FFFFFF">
-            
+            <div class="history-box">
+                <div class="stack-container">
+                    <div class="color-container" id="colors"></div>
+                    <div id="messages"></div>
+                </div>
+            </div>
         </div>
 
-        <div class="col-theor">
-            <img class="wheel" src="colorwheelfill.png" style="width: 100px;">
-            <ul class="color-themes">
-                <li>
-                    <div class="monochomatic">
+        <div class="theory-box">
+            <div class="stack-container">
+                <div class="horizontal-container">
+                    <div class="text-separator">
                         Monochomatic:
-                        <div class="rectangle monochrome"></div>
                     </div>
-                </li>
-                <li>
-                    <div class="complementary">
+                    <div class="rectangle monochrome"></div>
+                </div>
+
+                <div class="horizontal-container">
+                    <div class="text-separator">
                         Complementary:
-                        <div class="rectangle complement"></div>
-                        <div class="rectangle complement"></div>
                     </div>
-                </li>
-                <li>     
-                    <div class="analogous">
+                    <div class="rectangle complement"></div>
+                    <div class="rectangle complement"></div>
+                </div>
+
+                <div class="horizontal-container">
+                    <div class="text-separator">
                         Analogous:
-                        <div class="rectangle analog"></div>
-                        <div class="rectangle analog"></div>
-                        <div class="rectangle analog"></div>
                     </div>
-                </li>
-                <li>
-                    <div class="split-complementary">
+                    <div class="rectangle analog"></div>
+                    <div class="rectangle analog"></div>
+                    <div class="rectangle analog"></div>
+                </div>
+
+                <div class="horizontal-container">
+                    <div class="text-separator">
                         Split Complementary:
-                        <div class="rectangle split-comp"></div>
-                        <div class="rectangle split-comp"></div>
-                        <div class="rectangle split-comp"></div>
                     </div>
-                </li>
-                <li>
-                    <div class="triadic">
+                    <div class="rectangle split-comp"></div>
+                    <div class="rectangle split-comp"></div>
+                    <div class="rectangle split-comp"></div>
+                </div>
+
+                <div class="horizontal-container">
+                    <div class="text-separator">
                         Triadic:
-                        <div class="rectangle triad"></div>
-                        <div class="rectangle triad"></div>
-                        <div class="rectangle triad"></div>
                     </div>
-                </li>
-                <li>
-                    <div class="tetradic">
+                    <div class="rectangle triad"></div>
+                    <div class="rectangle triad"></div>
+                    <div class="rectangle triad"></div>
+                </div>
+
+                <div class="horizontal-container">
+                    <div class="text-separator">
                         Tetradic:
-                        <div class="rectangle tetra"></div>
-                        <div class="rectangle tetra"></div>
-                        <div class="rectangle tetra"></div>
-                        <div class="rectangle tetra"></div>
                     </div>
-                </li>
-            </ul>
-            
-        
+                    <div class="rectangle tetra"></div>
+                    <div class="rectangle tetra"></div>
+                    <div class="rectangle tetra"></div>
+                    <div class="rectangle tetra"></div>
+                </div>
+            </div>
         </div>
-
-        <button onclick="colorPick()">
-            HELO
-        </button>
-
-        <div class="rectangle shadeRect" id="test">
-
-        </div>
-
     </body>
 
-    
-
-    
-
-
-    
-    <script src="scripts/canvas.js"></script>
-    <script src="scripts/colorScript.js"></script>
-
+    <script type="module" src="scripts/colorCalculator.js"></script>
+    <script type="module" src="scripts/colorPicker.js"></script>
 
 </html>

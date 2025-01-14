@@ -1,11 +1,12 @@
-html{
+html
+{
     width: 400px;
-    
 }
 
-body{
-
-    background-color: #424a52;
+body
+{
+    color: white;
+    background-color: #19171E;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
@@ -13,8 +14,8 @@ body{
     width: 400px;
 }
 
-header{
-    
+header
+{
     font-family: "Noto Sans", sans-serif;
     color: white;
     background-color: #1e2124;
@@ -22,86 +23,72 @@ header{
     justify-content: space-between;
     align-items: center;
     padding: 0px 30px;
-
-    
-    
 }
 
-.menutab{
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  
-
-
+.horizontal-container
+{
+    display: flex;
+    flex-direction: row;
+    padding: 5px;
 }
 
-.color-themes{
+.stack-container
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.text-separator
+{
+    width: 150px;
+}
+
+.theory-box
+{
+    background-color: #25222C;
+    border-color: #2F2B38;
+    border-style: solid;
+    border-radius: 3px;
+    border-width: 1px;
+    margin: 5px;
+}
+
+.history-box
+{
+    width: 100%;
+    background-color: #201E25;
+}
+
+.menu-tab
+{
     list-style: none;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
-
-
-.menubutton{
+.menu-button
+{
     background-color: darkslategray;
     cursor: pointer;
     outline: none;
     border: none;
-
 }
-
-
-
 
 .rectangle {
     height: 20px;
     width: 40px;
-    
-    
-   
-}
-
-.rectangle.shadeRect{
-    background-color: red;
-
-}
-
-.shade-slide{
-    position: relative;
-    left: 80%;
-
-}
-
-.rectangle.monochrome{
     background-color: white;
-
+    border-color: #2F2B38;
+    border-style: solid;
+    border-width: 1px;
+    border-radius: 3px;
 }
 
-.rectangle.complement{
-    background-color: white;
-
-}
-
-.rectangle.analog{
-    background-color: white;
-
-}
-
-.rectangle.split-comp{
-    background-color: white;
-
-}
-
-.rectangle.triad{
-    background-color: white;
-
-}
-
-.rectangle.tetra{
-    background-color: white;
-
+.color-container
+{
+    display: flex;
+    flex-direction: column;
 }
 
 
